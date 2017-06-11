@@ -1,0 +1,12 @@
+version: '2'
+services:
+  shopify:
+    build: .
+    env_file: .env
+    volumes:
+      - .:/opt
+      - shopifymodules:/opt/node_modules
+    command: nodemon -e js --exec npm test
+
+volumes:
+  shopifymodules:
