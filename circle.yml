@@ -1,3 +1,12 @@
 machine:
+
   node:
     version: 7
+
+  environment:
+    SHOPIFY_API_KEY: abcd1234
+    SHOPIFY_API_SECRET: 987654321
+    SHOPIFY_API_REDIRECT_URL: https://test.redirect.com/
+    SHOPIFY_API_SCOPE: write_themes,write_products,write_customers
+
+  timezone: America/New_York
